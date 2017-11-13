@@ -15,7 +15,26 @@
 
 <ion-content padding>
 
-  <button mode="ios" ion-button (click)="goPageTwo()">
-    Go page two
-  </button>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar eros sem, at imperdiet elit consectetur eu. Ut eget mi id purus varius ullamcorper. Aliquam commodo ipsum posuere malesuada malesuada. Maecenas ut maximus tellus, at congue eros. Donec risus tortor, vulputate sit amet ornare at, placerat a mi. Phasellus posuere volutpat odio, vel lobortis magna molestie vel. Integer at tincidunt turpis. Integer id ligula lorem. Etiam tincidunt lectus dapibus nibh hendrerit, at convallis est dapibus. Donec blandit neque lectus, ac sagittis quam consequat in. Quisque consequat id nisi vitae sollicitudin. Proin consectetur tortor ut tincidunt posuere. Etiam dignissim gravida magna, sit amet consectetur lacus laoreet eu. Vestibulum porta urna sit amet odio rhoncus vehicula. Duis ex enim, auctor quis auctor at, porta sit amet odio.
+
+    Quisque venenatis justo tristique, iaculis sapien sed, tincidunt massa. Phasellus nisi urna, lacinia non lacus sed, porta dignissim ex. Vestibulum molestie est vitae ligula molestie, at iaculis lacus bibendum. Fusce sit amet sodales augue. Vestibulum at erat erat. Fusce rutrum cursus magna, sed interdum elit hendrerit feugiat. Cras efficitur sodales vulputate. Sed nisi orci, aliquam tempor ante vel, varius aliquam tellus. Sed in blandit elit. Nunc maximus nulla quis ante condimentum, quis congue leo dictum. Cras varius porttitor neque, non sollicitudin risus pulvinar quis. Morbi efficitur, tellus nec pulvinar luctus, nunc ligula malesuada nisl, in convallis felis dolor nec ante. Sed in molestie ipsum. Etiam neque ex, convallis id ante et, tincidunt scelerisque velit. Aenean molestie tellus tellus, non faucibus massa lacinia nec.
+
+    Cras sit amet dapibus est, maximus interdum dolor. Proin egestas viverra porta. Morbi at est felis. Sed vitae tortor a ante condimentum eleifend in luctus tortor. Vestibulum eu mauris euismod, volutpat lectus scelerisque, suscipit lectus. Proin elementum massa sed odio maximus, id sagittis velit accumsan. Nullam nec sodales purus. Suspendisse sed nulla non nisl finibus consequat nec sed metus. Quisque eget mauris nibh. Aliquam pulvinar nunc mi, ut congue elit dictum sed. Duis eleifend vel tortor id dictum. Vestibulum rhoncus justo eu scelerisque posuere.
+
+    Duis ipsum felis, malesuada eu accumsan consectetur, auctor vel massa. Nulla facilisi. Donec in consectetur erat. In quis dolor eget mauris euismod elementum vitae sit amet purus. Vivamus vulputate tristique eros sit amet placerat. Duis tristique varius suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc maximus, sem vitae varius vulputate, sem elit luctus diam, quis imperdiet mauris dolor vel enim. Integer aliquam est et lectus condimentum tempus. Aliquam at purus lacus.
+  </p>
+  <ion-toolbar>
+    <ion-searchbar
+    mode="wp"
+    [showCancelButton]="false"
+    (ionInput)="search($event)"
+    placeholder="placeholder">
+  </ion-searchbar>
+  <ion-buttons start class="buttonTag">
+    <button ion-button (click)="go()" color="primary">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-buttons>
+  </ion-toolbar>
 </ion-content>

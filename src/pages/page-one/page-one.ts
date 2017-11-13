@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { PageTwoPage } from '../page-two/page-two';
 /**
  * Generated class for the PageOnePage page.
  *
@@ -22,8 +21,11 @@ export class PageOnePage {
     console.log('ionViewDidLoad PageOnePage');
   }
 
-  goPageTwo(){
-    this.navCtrl.push(PageTwoPage)
+  search(ev: any){
+
   }
 
+  go(){
+
+  }
 }
