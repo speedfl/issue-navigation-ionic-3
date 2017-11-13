@@ -26,6 +26,10 @@ export class PageThreePage {
     this.navCtrl.popTo(PageOnePage);
   }
 
+  backPageOneWithPageName(){
+    this.navCtrl.popTo("PageOnePage");
+  }
+
   backPageOneWithNumber(){
     this.navCtrl.popTo(<any>1);
   }
